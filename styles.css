@@ -1,4 +1,4 @@
-html body {
+body {
     background-image: url("images/stars.png");
     background-repeat: repeat;
     background-attachment: fixed;
@@ -446,6 +446,5 @@ footer a:hover::before {
         padding: 0;
         margin-top: 20px;
     }
-
 
 }
