@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Experiments</title>
-    </head>
+<<<<<<< HEAD
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
 
-        <header>
-            <h1>Experiment Two: Functions and DOM</h1>
-            <h2>Open The Console To See The Functionality Of The Code</h2>
-            <p>Open Console:</p>
-            <ul>
-                <li>right click the page</li>
-                <li>click inspect</li>
-                <li>go to the console tab</li>
-            </ul>
-        </header>
+    <style>
+        html {
+            font-family: sans-serif;
+            line-height: 1.6em;
+        }a
 
-        <!--STAR SYMBOL PYRAMID PATTERN-->
+        body {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
 
-        <script>
-            var str = '';
-            for (var i = 1; i <= 20; i++) {
-                str += ' '.repeat(20 - i)
-                str += '*'.repeat(i + i - 1) + '\n'
+<body>
+
+    <header>
+        <h1>Experiment Two: Functions & DOM</h1>
+        <h2>Guess The Number</h2>
+    </header>
+
+    <!--visitors will play a number guessing game by picking a number in the list if they got it right or wrong the page will give them a message to tell which is which-->
+
+    <div>
+        <h3>How it works:</h3>
+        <ul>
+            <li>choose a number between 1-10</li>
+            <li>enter the number in the field</li>
+            <li>if your chosen number is greater than or <br> less than the generated number it will let you try again</li>
+            <li>if your chosen number matches the generated number you win</li>
+        </ul>
+    </div>
+
+    <!--field submission to guess-->
+
+    <div class="form">
+        <h3 id="sign">Guess The Number</h3>
+        <label for="guessField">Enter A Guess: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit Guess" class="guessSubmit" id="submitguess">
+    </div>
+
+    <!--message will change-->
+
+    <div>
+        <h3 id="message">Type Your Guess Above</h3>
+    </div>
+
+    <!--javascript-->
+
+    <script>
+  
+        // random number generated
+        var y = Math.floor(Math.random() * 10 + 1);
+    
+        document.getElementById("submitguess").onclick = function(){
+    
+            // number guessed by user in the field  
+            var x = document.getElementById("guessField").value;
+    
+            if(x == y)
+            {    
+                document.getElementById("message").innerHTML = "CONGRATULATIONS!!! YOU GUESSED IT RIGHT!!!";   
             }
-            console.log(str);
-        </script>
-    </body>
+            else if(x > y) 
+            /* if guessed number is lower than actual number*/
+            {
+                document.getElementById("message").innerHTML = "SORRY!! TRY A SMALLER NUMBER";
+            }
+            else
+            /* if guessed number is greater than actual number*/
+            {
+                document.getElementById("message").innerHTML = "SORRY!! TRY A GREATER NUMBER";
+            }
+        }
+    </script>
+
+</body>
+
 </html>
+
