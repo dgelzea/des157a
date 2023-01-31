@@ -57,6 +57,7 @@
     <!--javascript-->
 
     <script>
+
   
         // random number generated
         var y = Math.floor(Math.random() * 10 + 1);
@@ -67,16 +68,17 @@
             var x = document.getElementById("guessField").value;
     
             if(x == y)
+            /* if guessed number matches the actual number */
             {    
                 document.getElementById("message").innerHTML = "CONGRATULATIONS!!! YOU GUESSED IT RIGHT!!!";   
             }
             else if(x > y) 
-            /* if guessed number is lower than actual number*/
+            /* if guessed number is lower than actual number */
             {
                 document.getElementById("message").innerHTML = "SORRY!! TRY A SMALLER NUMBER";
             }
             else
-            /* if guessed number is greater than actual number*/
+            /* if guessed number is greater than actual number */
             {
                 document.getElementById("message").innerHTML = "SORRY!! TRY A GREATER NUMBER";
             }
