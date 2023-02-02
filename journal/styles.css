@@ -3,7 +3,7 @@ body {
     background-image: url("images/polka-dots.png");
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: center center; 
+    background-position: center center;
     justify-content: center;
     text-transform: uppercase;
     margin: 0;
@@ -53,17 +53,17 @@ header h1 {
     width: 68%;
     top: 88px;
     left: 0;
-    right: 0; 
+    right: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
-    color:#ffffff;
+    color: #ffffff;
     text-align: center;
     border: dashed 3px #ffffff;
     border-radius: 10px;
     margin: 55px;
     margin-bottom: 30px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
 }
 
@@ -73,6 +73,7 @@ header h1 {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     position: relative;
     top: -10px;
@@ -90,43 +91,55 @@ header h1 {
     background-color: #f1faf7;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 15px;
     color: #4F5664;
-    padding: 18px;
+    padding: 19px;
     margin: 0;
 }
 
 /****************** content **********************/
 
-#content {
+main {
     background-color: #ffffff;
     position: relative;
-    top: -10px;
+    top: -13px;
 }
 
-#content article {
+main article {
     background-color: #f1f1fa;
     padding: 35px;
 }
 
 .pointer {
-	height: 65px;
-	width: 65px;
-	background: #f1f1fa;
-	margin: 0 auto;
-	transform: rotate(45deg);
-	border-radius: 0 0 12px 0;
-	margin-top: -35px;
-	position: relative;
-	left: calc(0.5vw - 50px);
+    height: 65px;
+    width: 65px;
+    background: #f1f1fa;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 0 0 12px 0;
+    margin-top: -35px;
+    position: relative;
+    left: calc(0.5vw - 50px);
 }
 
-#icon {
-    position: relative;
-    top: -55px;
+#icon1, #icon2 {
+    width: 100%;
     left: 0;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+}
+
+.icon-wave {
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-greet {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*************** text *******************/
@@ -161,16 +174,16 @@ p {
 
 /*************** links *******************/
 
-a:link {
-    color: rgb(44, 172, 161);
+article a:link {
+    color: #bead4b;
 }
 
-a:visited {
-    color: rgb(16, 182, 168);
+article a:visited {
+    color: #bead4b;
 }
 
 article a {
-    background: linear-gradient(0deg, #bead4b, #bead4b) no-repeat right bottom / 0 var(--bg-h);
+    background: linear-gradient(0deg, #ffffff, #ffffff) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 100%;
     text-decoration: none;
@@ -186,7 +199,7 @@ article a:where(:hover, :focus-visible) {
 /**************** footer **********************/
 
 footer {
-    background-color: rgb(164, 192, 212, 0.8);
+    background-color: rgb(164, 192, 212);
     margin: 0;
     padding: 30px;
     margin-bottom: 55px;
@@ -199,11 +212,16 @@ footer p {
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
+    color: #ffffff;
 }
 
 footer a:link {
     text-decoration: none;
-    color: #166e6a;
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: rgb(255, 255, 255);
 }
 
 footer a {
@@ -237,11 +255,6 @@ footer a:hover::before {
 
 @media only screen and (min-width: 600px) {
 
-    html, 
-    body {
-        overflow-x: hidden;
-    }
-
     #container {
         width: 85%;
         margin: auto;
@@ -253,42 +266,31 @@ footer a:hover::before {
     header {
         position: relative;
     }
-    
+
     header h1 {
         position: absolute;
         font-size: 45px;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 50%;
-        padding: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     #title img {
         width: 88px;
         height: 88px;
     }
-    
+
     #title h2 {
-        font-size: 20px;
-        padding-top: 20px;
+        font-size: 26px;
         margin: 0;
+        padding: 30px;
         text-align: center;
-    }
-    
-    #icon {
-        left: 20%;
-        width: 100%;
-        margin: auto;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-
-    html, body {
-        overflow-x: hidden;
-    }
 
     #container {
         width: 80%;
@@ -296,143 +298,87 @@ footer a:hover::before {
         position: relative;
     }
 
-    /************ header ************/
+    /************ top ************/
 
-    header {
-        margin-top: 28px;
-    }
-    
-    header img {
-        position: relative;
-        width: 100%;
-        height: 138px;
-        left: 0;
-        padding: 0;
-        margin: 0;
-    }
-    
     header h1 {
-        position: absolute;
-        border: none;
-        font-size: 45px;
-        top: 50%;
-        left: 0; 
-        right: 0;
-        width: 88%;
+        top: 98px;
     }
-   
-    /************ header ************/
-
-    header {
-        position: relative;
-        margin-top: 28px;
-    }
-    
-    header img {
-        width: 100%;
-        height: 138px;
-        left: 0;
-        padding: 0;
-        margin: 0;
-    }
-    
-    header h1 {
-        position: absolute;
-        border: none;
-        font-size: 45px;
-        top: 26%;
-        left: 0; 
-        right: 0;
-        margin: auto;
-        width: 88%;
-    }
-    
-    /************ title ************/
 
     #title {
+        border-right: solid 10px rgb(164, 192, 212);
+        border-left: solid 10px rgb(164, 192, 212);
+    }
+
+    /************ middle ************/
+
+    main {
+        border-right: solid 10px rgb(164, 192, 212);
+        border-left: solid 10px rgb(164, 192, 212);
+        padding: 25px;
+        position: relative;
+    }
+
+    #one, #two {
+        position: relative;
+        padding-bottom: 158px;
+    }
+
+    div article {
+        padding-bottom: 120px;
+    }
+
+    .pointer {
+        margin-top: -86px;
+        z-index: -1;
+    }
+
+    .icon-wave {
         position: absolute;
-        background: none;
-        z-index: 1;
-        left: 48%;
-        top: 90%;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #title img {
-        width: 65px;
-        height: 65px;
-        margin: 0;
-        padding: 6px;
-    }
-    
-    #title h2 {
-        font-size: 20px;
-        color: #4F5664;
-        padding: 27px;
-        margin: auto;
-        text-align: center;
+        top: 55%;
+        left: 83%;
     }
 
-    
-    /************ content ************/
-
-    #content article {
-        border-right: solid 10px rgb(164, 192, 212, 0.8);
-        border-left: solid 10px rgb(164, 192, 212, 0.8);
-        padding-top: 13px;
-        padding-bottom: 13px;
+    .icon-greet {
+        position: absolute;
+        top: 63%;
+        left: 16%;
     }
 
-    #text {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: row;
-        display: flex;
-        flex-wrap: nowrap;
-    }
+    /************ text ************/
 
-    #content h3 {
+    main h3 {
         font-size: 23px;
     }
 
-    #content h4 {
+    main h4 {
         font-size: 15px;
         padding-top: 0;
     }
 
-    #content p {
+    main p {
         font-size: 13px;
         padding: 12.5px;
     }
-
-    #icon {
-        position: absolute;
-        z-index: 1;
-        left: 75%;
-        right: 0;
-        top: 68%;
-        margin: 0;
-        padding: 0;
+    
+    #text1, #text2 {
+        display: flex;
     }
 
-    /************ footer ************/
+    /************ bottom ************/
 
     footer {
         position: relative;
-        top: -43px;
+        top: -13px;
     }
 
     footer #contact {
-        top: -30px;
         display: flex;
         padding: 8px;
+        justify-content: center;
     }
 
     footer p {
-        font-size: 13px;
-        padding-left: 25px;
+        font-size: 18px;
+        margin: 20px;
     }
-    
 }
