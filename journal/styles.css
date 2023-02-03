@@ -314,17 +314,17 @@ footer a:hover::before {
     main {
         border-right: solid 10px rgb(164, 192, 212);
         border-left: solid 10px rgb(164, 192, 212);
-        padding: 25px;
+        padding: 35px;
         position: relative;
     }
 
     #one, #two {
         position: relative;
-        padding-bottom: 158px;
+        padding-bottom: 195px;
     }
 
     div article {
-        padding-bottom: 120px;
+        padding-bottom: 125px;
     }
 
     .pointer {
@@ -334,14 +334,14 @@ footer a:hover::before {
 
     .icon-wave {
         position: absolute;
-        top: 55%;
-        left: 83%;
+        top: 52%;
+        left: 85%;
     }
 
     .icon-greet {
         position: absolute;
-        top: 63%;
-        left: 16%;
+        top: 60%;
+        left: 13%;
     }
 
     /************ text ************/
