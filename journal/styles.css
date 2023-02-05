@@ -364,6 +364,11 @@ footer a:hover::before {
         display: flex;
     }
 
+    #text1 p, #text2 p{
+        flex: 1;
+        hyphens: auto;
+    }
+
     /************ bottom ************/
 
     footer {
