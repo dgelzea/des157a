@@ -50,7 +50,7 @@ header img {
     margin: 0;
 }
 
-h1, h2 {
+.wavy {
     position: absolute;
     width: 68%;
     top: 48%;
@@ -59,24 +59,28 @@ h1, h2 {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    justify-content:  center;
+    text-align: center;
+    line-height: 1.8em;
 }
 
-h1 {
+.wavy span {
     font-family: 'Slackey', cursive;
-    font-size: 35px; 
+    font-size: 36px; 
     color: #FCD891;
-    text-align: center;
     line-height: 40px;
-    -webkit-text-stroke: 0.5px #D0965D;
+    -webkit-text-stroke: 1.5px #D0965D;
+    display: inline-block;
+    animation: wavy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
 }
-
-h2 {
-    top: 60%;
-    font-family: 'Slackey', cursive;
-    font-size: 28px; 
-    color: #FCD891;
-    text-align: center;
-    -webkit-text-stroke: 1px #D0965D;
+@keyframes wavy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
 }
 
 /****************** content **********************/
@@ -150,19 +154,11 @@ input[type=submit]:hover {
   
 /****************** credits **********************/
 
-
 #credits {
     position: relative;
     margin-bottom: 75px;
-    padding-bottom: 88px;
+    padding-bottom: 68px;
 }
-
-#credits img {
-    position: absolute;
-    top: 55%;
-    z-index: 1;
-}
-
 
 #credits h3 {
     font-family: 'Questrial', sans-serif;
@@ -180,6 +176,29 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+.icon {
+    position: absolute;
+    top: 55%;
+    z-index: 1;
+}
+
+.bird {
+    position: absolute;
+    left: 0;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 /****************** footer **********************/
 
 footer {
@@ -192,7 +211,7 @@ footer {
 }
 
 footer p {
-    background-color: rgba(217, 226, 239, 0.5);
+    background-color: rgba(193, 205, 221, 0.8);
     font-family: 'Questrial', sans-serif;
     font-size: 13px;
     font-weight: bold;
@@ -233,4 +252,101 @@ footer a::before {
 footer a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+
+/****************** media query ******************/
+
+
+@media only screen and (min-width: 600px) {
+
+    html, body {
+        background-image: url("images/flowers.png");
+        background-repeat: repeat;
+        background-position: fixed;
+    }
+
+    #container {
+        background: rgb(255,246,227);
+        background: linear-gradient(0deg, rgba(255,246,227,1) 0%, rgba(255,235,211,1) 100%);
+        width: 85%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    /************ content ************/
+    
+    .wavy {
+        font-size: 50px;
+        top: 35%;
+        line-height: 1.3em;
+    }
+
+    .icon{ 
+        top: 48%;
+        left: 45%;
+    }
+
+    .bird {
+        top: 45%;
+        left: 35%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    html, body {
+        background-image: url("images/flowers.png");
+        background-repeat: repeat;
+        background-position: fixed;
+    }
+
+    #container {
+        background: rgb(255,246,227);
+        background: linear-gradient(0deg, rgba(255,246,227,1) 0%, rgba(255,235,211,1) 100%);
+        margin: auto;
+        position: relative;
+        border-right: solid 10px #f5dacd;
+        border-left: solid 10px #f5dacd;
+    }
+
+    /************ top ************/
+
+    .wavy {
+        font-size: 65px;
+        top: 26%;
+        line-height: 1em;
+    }
+
+    #title {
+        border-right: solid 10px rgb(164, 192, 212);
+        border-left: solid 10px rgb(164, 192, 212);
+    }
+
+    /************ middle ************/
+
+    #content {
+        display: flex;
+    }
+
+
+    /************ text ************/
+
+    /************ bottom ************/
+
+    footer {
+        position: relative;
+        top: -13px;
+    }
+
+    footer #contact {
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 18px;
+        margin: 20px;
+    }
 }
