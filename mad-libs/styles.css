@@ -6,6 +6,7 @@ body {
     text-transform: uppercase;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 
 #container {
@@ -184,6 +185,7 @@ input[type=submit]:hover {
 
 .bird {
     position: absolute;
+    top: 53%;
     left: 0;
     animation-name: floating;
     animation-duration: 3s;
@@ -261,15 +263,15 @@ footer a:hover::before {
 @media only screen and (min-width: 600px) {
 
     html, body {
-        background-image: url("images/flowers.png");
+        background-image: url("images/diamond.png");
         background-repeat: repeat;
-        background-position: fixed;
     }
 
     #container {
         background: rgb(255,246,227);
         background: linear-gradient(0deg, rgba(255,246,227,1) 0%, rgba(255,235,211,1) 100%);
-        width: 85%;
+        box-shadow: 0px 0px 5px rgba(182, 159, 159, 0.5);
+        width: 88%;
         margin: auto;
         justify-content: center;
     }
@@ -284,51 +286,55 @@ footer a:hover::before {
 
     .icon{ 
         top: 48%;
-        left: 45%;
+        left: 52%;
     }
 
     .bird {
         top: 45%;
-        left: 35%;
+        left: 43%;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-
-    html, body {
-        background-image: url("images/flowers.png");
-        background-repeat: repeat;
-        background-position: fixed;
-    }
 
     #container {
         background: rgb(255,246,227);
         background: linear-gradient(0deg, rgba(255,246,227,1) 0%, rgba(255,235,211,1) 100%);
         margin: auto;
         position: relative;
-        border-right: solid 10px #f5dacd;
-        border-left: solid 10px #f5dacd;
+        border-right: solid 10px #fbf1ee;
+        border-left: solid 10px #fbf1ee;
     }
 
     /************ top ************/
 
     .wavy {
-        font-size: 65px;
-        top: 26%;
+        top: 25%;
         line-height: 1em;
     }
 
-    #title {
-        border-right: solid 10px rgb(164, 192, 212);
-        border-left: solid 10px rgb(164, 192, 212);
+    .wavy span {
+        font-size: 50px;
     }
-
+    
     /************ middle ************/
 
     #content {
         display: flex;
+        flex: 1;
     }
 
+    #content :nth-child(1) { 
+        order: 1;
+    }
+
+    #content :nth-child(2) { 
+        order: 3;
+    }
+
+    #content :nth-child(3) { 
+        order: 2;
+    } 
 
     /************ text ************/
 
