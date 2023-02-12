@@ -29,64 +29,144 @@
         <header>
             <img class="bg" src="images/banner.png" alt="banner" height="750">
             <div class="wavy">
-                <span style="--i:1">Treasure</span>
-                <span style="--i:2">Hunt</span>
-                <span style="--i:3">Quest</span>
-                <span style="--i:4; font-size:26px; padding:18px">-MAD LIB 2.0-</span>
+                    <span class="title" style="--i:1">Treasure</span>
+                    <span class="title"  style="--i:2">Hunt</span>
+                    <span class="title"  style="--i:3">Quest</span>
+                    <span class="subtext" style="--i:4">-MAD LIB 2.0-</span>
             </div>
         </header>
 
         <div id="content">
+
             <div id="description">
-                <h3>Description</h3>
+                <h2>Description</h2>
                 <p>
                     Hello Traveler! Would you like to accompany this wanderer to hunt for the legendary treasure chest in a certain island?
                 </p>
             </div>
 
             <div id="form">
-                <h3>Fill in each box and click explore to see the story quest!</h3>
+                <h2>Fill in each box and click explore to see the story quest!</h2>
                 <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name">
+
+                    <label for="food">Food</label>
+                    <input type="text" name="food" id="food" placeholder="Enter A Food">
                         
                     <label for="place">Place</label>
                     <input type="text" name="place" id="place" placeholder="Enter A Place">
-                    
-                    <label for="food">Food</label>
-                    <input type="text" name="food" id="food" placeholder="Enter A Food">
-                    
-                    <label for="noun">Noun</label>
-                    <input type="text" name="noun" id="noun" placeholder="Enter A Noun">
-                    
+
                     <label for="color">Color</label>
                     <input type="text" name="color" id="color" placeholder="Enter A Color">
+                    
+                    <label for="adjective">Adjective</label>
+                    <input type="text" name="adjective" id="adjective" placeholder="Enter An Adjective">
                     
                     <label for="thing">Thing</label>
                     <input type="text" name="color" id="thing" placeholder="Enter Your A Thing">
 
-                    <input type="submit" name="explore" value="LET'S EXPLORE!">
+                    <input type="submit" name="explore" class="explore" value="LET'S EXPLORE!">
+
                 </form>
-            </div>
+            </div> 
 
             <div id="credits">
-                <h3>By: Gelzea Domingo</h3>
+                <h2>By: Gelzea Domingo</h2>
                 <p>Based from the game Genshin Impact (￢‿￢ )</p>
-                <div id="icon">
-                    <img class="icon" src="images/icon.png" alt="icon" width="350" height="350">
-                    <img class="bird" src="images/bird.png" alt="bird" width="130" height="130">
-                </div>
             </div>
-        </div>
+        </div> 
+
+        <section id="overlay" class="hidden">
+
+            <img class="chest" src="images/chest.png" alt="chest" width="150" height="60">
+        
+            <h3>Quest Start!</h3>
+            <p>
+                you just woke up from a nap, and you saw a familiar figure was waitng for you, so you stood up and walk to talk to them
+            </p>
+        
+            <article id="madlib">
+        
+                <article id="part-one">
+                    <div id="one" class="box sb"></div>
+        
+                    <img class="story" src="images/part-one.png" alt="story" width="800" height="500">
+        
+                    <h4>Part One: Hello Again</h4>
+                </article>
+        
+                <article id="part-two">
+                    <div id="two" class="box sb"></div>
+        
+                    <img class="story" src="images/part-two.png" alt="story">
+        
+                    <h4>Part Two: Be Careful Next Time</h4>
+                </article>
+        
+                <article id="part-three">
+        
+                    <div id="three" class="box sb"></div>
+        
+                    <img class="story" src="images/part-three.png" alt="story">
+        
+                    <h4>Part Three: Continue On</h4>
+        
+                </article>
+        
+                <article id="part-four">
+        
+                    <div id="four" class="box sb"></div>
+        
+                    <img class="story" src="images/part-four.png" alt="story">
+        
+                    <h4>Part Four: Getting Close</h4>
+        
+                </article>
+        
+                <article id="part-five">
+        
+                    <div id="five" class="box"></div>
+        
+                    <img class="story" src="images/part-five.png" alt="story">
+        
+                    <h4>Part Five: Got It!</h4>
+        
+                </article>
+        
+                <article id="part-six">
+        
+                    <div id="six" class="box sb"></div>
+        
+                    <img class="story" src="images/part-six.png" alt="story">
+        
+                    <h4>Part Six: Got Nothing?</h4>
+        
+                </article>
+        
+            </article>
+
+            <p>
+                you and Geo did not find the real treasure but as they say the real treasure is the journey you had together isn't it? But for now it's better to go back and find more adventure after!
+            </p>
+
+            <button class="close">LET'S REST!</button>
+        
+            <img class="chest" src="images/chest.png" alt="chest" width="150" height="60">
+        
+        </section>
 
         <footer>
+            <div id="icon">
+                <img class="icon" src="images/icon.png" alt="icon" width="380" height="380">
+                <img class="bird" src="images/bird.png" alt="bird" width="130" height="130">
+            </div>
             <div id="contact">
                 <p>
                     <a href="mailto:&#103;&#108;&#122;&#100;&#111;&#109;&#105;&#110;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#103;&#108;&#122;&#100;&#111;&#109;&#105;&#110;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
                 </p>
-                <p>
-                    <a href="https://validator.w3.org/check?uri=https://dgelzea.github.io/des157a/mad-libs/index.html">Valid HTML5</a>
-                </p>
+                <p><a href="https://validator.w3.org/check?uri=https://dgelzea.github.io/des157a/mad-libs/index.html">Valid HTML5</a></p>
+                <p><a href="http://validator.w3.org/check?uri=https://dgelzea.github.io/des157a/mad-libs/styles.css">Valid CSS</a></p>
             </div>
         </footer>
     </div>
