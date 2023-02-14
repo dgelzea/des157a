@@ -41,12 +41,15 @@
             <div id="description">
                 <h2>Description</h2>
                 <p>
-                    Hello Traveler! Would you like to accompany this wanderer to hunt for the legendary treasure chest in a certain island?
+                    Hello Traveler! Would you like to accompany a certain wanderer to hunt the legendary treasure chest in a island?
                 </p>
             </div>
 
             <div id="form">
                 <h2>Fill in each box and click explore to see the story quest!</h2>
+
+                <p id="error"></p>
+
                 <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name">
@@ -56,6 +59,7 @@
                         
                     <label for="place">Place</label>
                     <input type="text" name="place" id="place" placeholder="Enter A Place">
+                    <p id="erro-place"></p>
 
                     <label for="color">Color</label>
                     <input type="text" name="color" id="color" placeholder="Enter A Color">
@@ -75,18 +79,19 @@
                 <h2>By: Gelzea Domingo</h2>
                 <p>Based from the game Genshin Impact (￢‿￢ )</p>
             </div>
+
         </div> 
 
-        <section id="overlay" class="hidden">
-
+        <section id="overlay">
+        
             <img class="chest" src="images/chest.png" alt="chest" width="150" height="60">
         
             <h3>Quest Start!</h3>
             <p>
-                you just woke up from a nap, and you saw a familiar figure was waitng for you, so you stood up and walk to talk to them
+                you just woke up from a nap, and you saw a familiar figure was waitng for you, so you stood up talk to them
             </p>
         
-            <article id="madlib">
+            <div id="madlib">
         
                 <article id="part-one">
                     <div id="one" class="box sb"></div>
@@ -144,13 +149,13 @@
         
                 </article>
         
-            </article>
-
+            </div>
+        
             <p>
-                you and Geo did not find the real treasure but as they say the real treasure is the journey you had together isn't it? But for now it's better to go back and find more adventure after!
+                Oh well, you and Geo did not find the real treasure but as they say the real treasure is the journey you had together isn't it? But for now it's better to go back to relax together and find more adventure after!
             </p>
-
-            <button class="close">LET'S REST!</button>
+        
+            <button type="submit" class="restart">LET'S REST!</button>
         
             <img class="chest" src="images/chest.png" alt="chest" width="150" height="60">
         
