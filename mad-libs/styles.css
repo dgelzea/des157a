@@ -164,6 +164,10 @@ input[type=submit], button {
 input[type=submit]:hover {
     background-color: #8ab4da;
 }
+
+button:hover {
+    background-color: #8ab4da;
+}
   
 /****************** credits **********************/
 
