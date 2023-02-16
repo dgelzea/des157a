@@ -133,7 +133,7 @@ figure img {
     padding-bottom: 30px;
 }
 
-.icon.wavee {
+.icon.clap {
     position: relative;
     top: -15px;
     left: 50%;
@@ -402,7 +402,7 @@ footer a:hover::before {
         z-index: -1;
     }
 
-    .icon-wavee {
+    .icon-clap {
         position: absolute;
         top: 73%;
         left: 0;
