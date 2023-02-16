@@ -133,6 +133,13 @@ figure img {
     padding-bottom: 30px;
 }
 
+.icon.wavee {
+    position: relative;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
 .icon-wave {
     position: relative;
     top: -15px;
