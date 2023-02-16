@@ -133,18 +133,21 @@ figure img {
     padding-bottom: 30px;
 }
 
-.icon.clap {
-    position: relative;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);   
-}
 
 .icon-wave {
     position: relative;
     top: -15px;
     left: 50%;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);   
+    margin-bottom: 35px; 
+}
+
+.icon-clap {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 35px;
 }
 
 .icon-greet {
@@ -193,7 +196,7 @@ article h5 {
 figcaption {
     font-family: 'Shippori Antique', sans-serif;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
     color: #b0b5be;
     padding-top: 10px;
     padding-bottom: 25px;
@@ -332,6 +335,15 @@ footer a:hover::before {
         padding: 30px;
         text-align: center;
     }
+
+    figure img {
+        display: block;
+        width: 350px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -384,13 +396,14 @@ footer a:hover::before {
 
     #part-one, #part-two {
         display: flex;
-        flex: 1;
+        align-items: center;
     }
 
     figure img {
+        display: block;
         width: 200px;
         height: auto;
-        align-items: center;
+        margin: auto;
     }
 
     div article {
@@ -402,28 +415,28 @@ footer a:hover::before {
         z-index: -1;
     }
 
-    .icon-clap {
-        position: absolute;
-        top: 73%;
-        left: 0;
-    }
-
     .icon-wave {
         position: absolute;
+        top: 73%;
+        left: 18%;
+    }
+
+    .icon-clap {
+        position: absolute;
         top: 58%;
-        left: 85%;
+        left: 83%;
     }
 
     .icon-greet {
         position: absolute;
         top: 62%;
-        left: 15%;
+        left: 18%;
     }
 
     .icon-proud {
         position: absolute;
-        top: 55%;
-        left: 85%;
+        top: 58%;
+        left: 83%;
     }
 
     /************ text ************/
@@ -449,6 +462,10 @@ footer a:hover::before {
     .text p{
         flex: 1;
         hyphens: auto;
+    }
+
+    figcaption {
+        font-size: 10px;
     }
 
     /************ bottom ************/
