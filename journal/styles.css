@@ -122,6 +122,10 @@ main article {
     left: calc(0.5vw - 50px);
 }
 
+figure img {
+    width:100%
+}
+
 .icon {
     width: 100%;
     left: 0;
@@ -131,7 +135,7 @@ main article {
 
 .icon-wave {
     position: relative;
-    top: -45px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);    
 }
@@ -148,7 +152,7 @@ main article {
     position: relative;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
     margin-bottom: 35px;
 }
 
@@ -171,6 +175,24 @@ article h4 {
     border-bottom: solid 1px #8ECACB;
 }
 
+article h5 {
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #7c818b;
+    text-align: center;
+}
+
+figcaption {
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #b0b5be;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
 p {
     color: #16646e;
     font-family: 'Questrial', sans-serif;
@@ -180,6 +202,11 @@ p {
     text-align: justify;
     padding: 3px;
     line-height: 1.8em;
+}
+
+#part-one-end {
+    border-bottom: solid 1px #c6d8d8; 
+    padding-bottom: 30px;
 }
 
 /*************** links *******************/
@@ -328,15 +355,35 @@ footer a:hover::before {
         position: relative;
     }
 
-    #one, #two, #three {
+    #one, #two, #three, #four {
         position: relative;
         padding-bottom: 110px;        
         border-bottom: solid 3px rgb(164, 192, 212);
         margin-bottom: 28px;
     }
 
-    #two {
+    #part-one {
+        border-bottom: solid 1px #c6d8d8; 
+        padding-bottom: 30px;
+    }
+
+    #part-one-end {
+        border: none;
+    }
+
+    #three {
         padding-bottom: 150px;
+    }
+
+    #part-one, #part-two {
+        display: flex;
+        flex: 1;
+    }
+
+    figure img {
+        width: 200px;
+        height: auto;
+        align-items: center;
     }
 
     div article {
@@ -346,6 +393,12 @@ footer a:hover::before {
     .pointer {
         margin-top: -86px;
         z-index: -1;
+    }
+
+    .icon-wavee {
+        position: absolute;
+        top: 73%;
+        left: 0;
     }
 
     .icon-wave {
