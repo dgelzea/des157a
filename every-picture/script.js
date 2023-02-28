@@ -3,142 +3,139 @@
     'use strict';
     console.log('Reading JS');
 
-//     const spring = document.querySelector("#spring .button");
-//     const summer = document.querySelector("#summer .button");
-//     const fall = document.querySelector("#fall .button");
-//     const winter = document.querySelector("#winter .button");
-//     const close = document.querySelectorAll(".close");
+    const spring = document.querySelector("#spring .button");
+    const close =  document.querySelectorAll(".close");
 
-//     //close window in general
-//     close.forEach(close => {
-//         close.addEventListener('click', function(event) {
+    //close everything
+    close.forEach(close => {
+        close.addEventListener("click", function(event){
+            location.reload();
+        });
+    });
 
-//             document.getElementById("content").style.cssText = `display: block; animation: fadeIn .5s;`
-
-//             document.getElementById("spring-des").style.display = "none"; 
-//             document.getElementById("spring-album").style.display = "none"; 
-
-//             document.getElementById("summer-des").style.display = "none";
-//             document.getElementById("summer-album").style.display = "none";
-
-//             document.getElementById("fall-des").style.display = "none";
-//             document.getElementById("fall-album").style.display = "none";
-
-//             document.getElementById("winter-des").style.display = "none";
-//             document.getElementById("winter-album").style.display = "none";
-//         });
-//     });
-
-//     //spring section
-//     spring.addEventListener("click", function(event){
+    //spring section 
+    spring.addEventListener("click", function(event){
         
-//         event.preventDefault();
-//         const back1 = document.querySelector("#back1");
-//         const album = document.querySelector("#spring-des button");
+        event.preventDefault();
+        const back1 = document.querySelector("#back1");
+        const album = document.querySelector("#spring-des button");
 
-//         //switch content to description
-//         document.getElementById("content").style.display = "none";       
-//         document.getElementById("spring-des").style.display = "block";
+        //switch all to description
+        document.getElementById("content").style.display = "none";
+        document.querySelector("header").style.display = "none";  
+        document.querySelector("footer").style.display = "none";
 
-//         //back to description
-//         back1.addEventListener("click", function(event){
-//             event.preventDefault();
-//             document.getElementById("spring-des").style.cssText = `display: block; animation: fadeIn .5s;`
-//             document.getElementById("spring-album").style.display = "none";
-//         });
+        document.getElementById("spring-des").style.display = "block";
 
-//         //switch from description to album
-//         album.addEventListener("click", function(event) {
-//             event.preventDefault();
-//             document.getElementById("content").style.display = "none";       
-//             document.getElementById("spring-des").style.display = "none";
-//             document.getElementById("spring-album").style.display = "block";
-//         });
+        //back to description
+        back1.addEventListener("click", function(event){
+            event.preventDefault();
+            document.getElementById("spring-des").style.cssText = `display: block; animation: fadeIn .5s;`
+            document.getElementById("spring-album").style.display = "none";
+        });
 
-//     });
+        //switch from description to album
+        album.addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("content").style.display = "none";       
+            document.getElementById("spring-des").style.display = "none";
+            document.getElementById("spring-album").style.display = "block";
+        });
 
-//     //summer section
-//     summer.addEventListener("click", function(event){
+    });
+
+    //summer section
+    summer.addEventListener("click", function(event){
         
-//         event.preventDefault();
-//         const back2 = document.querySelector("#back2");
-//         const album = document.querySelector("#summer-des button");
+        event.preventDefault();
+        const back2 = document.querySelector("#back2");
+        const album = document.querySelector("#summer-des button");
 
-//         //switch content to description
-//         document.getElementById("content").style.display = "none";       
-//         document.getElementById("summer-des").style.display = "block";
-
-//         //back to description
-//         back2.addEventListener("click", function(event){
-//             event.preventDefault();
-//             document.getElementById("summer-des").style.cssText = `display: block; animation: fadeIn .5s;`
-//             document.getElementById("summer-album").style.display = "none";
-//         });
-
-//         //switch from description to album
-//         album.addEventListener("click", function(event) {
-//             event.preventDefault();
-//             document.getElementById("content").style.display = "none";       
-//             document.getElementById("summer-des").style.display = "none";
-//             document.getElementById("summer-album").style.display = "block";
-//         });
-//     });
-
-//     //fall section
-//     fall.addEventListener("click", function(event){
+        //switch all to description
+        document.getElementById("content").style.display = "none"; 
+        document.querySelector("header").style.display = "none";  
+        document.querySelector("footer").style.display = "none"; 
         
-//         event.preventDefault();
-//         const back3 = document.querySelector("#back3");
-//         const album = document.querySelector("#fall-des button");
+        document.getElementById("summer-des").style.display = "block";
 
-//         //switch content to spring description
-//         document.getElementById("content").style.display = "none";       
-//         document.getElementById("fall-des").style.display = "block";
+        //back to description
+        back2.addEventListener("click", function(event){
+            event.preventDefault();
+            document.getElementById("summer-des").style.cssText = `display: block; animation: fadeIn .5s;`
+            document.getElementById("summer-album").style.display = "none";
+        });
 
-//         //back to description
-//         back3.addEventListener("click", function(event){
-//             event.preventDefault();
-//             document.getElementById("fall-des").style.cssText = `display: block; animation: fadeIn .5s;`
-//             document.getElementById("fall-album").style.display = "none";
-//         });
-
-//         //switch from description to album
-//         album.addEventListener("click", function(event) {
-//             event.preventDefault();
-//             document.getElementById("content").style.display = "none";       
-//             document.getElementById("fall-des").style.display = "none";
-//             document.getElementById("fall-album").style.display = "block";
-//         });
-
-//     });
-
-//     //winter section
-//     winter.addEventListener("click", function(event){
+        //switch from description to album
+        album.addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("content").style.display = "none";       
+            document.getElementById("summer-des").style.display = "none";
+            document.getElementById("summer-album").style.display = "block";
+        });
+    });
+    
+    //fall section
+    fall.addEventListener("click", function(event){
         
-//         event.preventDefault();
-//         const back4 = document.querySelector("#back4");
-//         const album = document.querySelector("#winter-des button");
+        event.preventDefault();
+        const back3 = document.querySelector("#back3");
+        const album = document.querySelector("#fall-des button");
 
-//         //switch content to spring description
-//         document.getElementById("content").style.display = "none";       
-//         document.getElementById("winter-des").style.display = "block";
+        //switch content to spring description
+        document.getElementById("content").style.display = "none";   
+        document.querySelector("header").style.display = "none";  
+        document.querySelector("footer").style.display = "none";
+        
+        document.getElementById("fall-des").style.display = "block";
 
-//         //back to description
-//         back4.addEventListener("click", function(event){
-//             event.preventDefault();
-//             document.getElementById("winter-des").style.cssText = `display: block; animation: fadeIn .5s;`
-//             document.getElementById("winter-album").style.display = "none";
-//         });
+        //back to description
+        back3.addEventListener("click", function(event){
+            event.preventDefault();
+            document.getElementById("fall-des").style.cssText = `display: block; animation: fadeIn .5s;`
+            document.getElementById("fall-album").style.display = "none";
+        });
 
-//         //switch from description to album
-//         album.addEventListener("click", function(event) {
-//             event.preventDefault();
-//             document.getElementById("content").style.display = "none";       
-//             document.getElementById("winter-des").style.display = "none";
-//             document.getElementById("winter-album").style.display = "block";
-//         });
+        //switch from description to album
+        album.addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("content").style.display = "none";       
+            document.getElementById("fall-des").style.display = "none";
+            document.getElementById("fall-album").style.display = "block";
+        });
 
-//     });
+    });
+
+    //winter section
+    winter.addEventListener("click", function(event){
+        
+        event.preventDefault();
+        const back4 = document.querySelector("#back4");
+        const album = document.querySelector("#winter-des button");
+
+        //switch content to spring description
+        document.getElementById("content").style.display = "none";   
+        document.querySelector("header").style.display = "none";  
+        document.querySelector("footer").style.display = "none";
+              
+        document.getElementById("winter-des").style.display = "block";
+
+        //back to description
+        back4.addEventListener("click", function(event){
+            event.preventDefault();
+            document.getElementById("winter-des").style.cssText = `display: block; animation: fadeIn .5s;`
+            document.getElementById("winter-album").style.display = "none";
+        });
+
+        //switch from description to album
+        album.addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("content").style.display = "none";       
+            document.getElementById("winter-des").style.display = "none";
+            document.getElementById("winter-album").style.display = "block";
+        });
+
+    });
+
 
     //album slideshow in general
 
