@@ -464,15 +464,18 @@ footer a:hover::before {
      }
 
      header {
+          background: none;
           width: 65%;
           display: flex;
           flex: 1;
           text-align: left;
+          align-items: center;
+          justify-content: center;
      }
 
      #content {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           gap: 10px;
           padding: 20px;
      }
@@ -480,43 +483,6 @@ footer a:hover::before {
      #content p {
           grid-column: 1 / 3;
           font-size: 18px;
-     }
-
-     /****************** overlays **********************/
-
-     #description section {
-          padding: 50px;
-     }
-     
-     #description .icon {
-          width: 500px;
-          height: auto;
-     }
-        
-     #description p {
-          font-size: 15px;
-          padding: 30px;
-     }
-
-     #description button, #album button {
-          font-size: 18px;
-          padding: 20px;
-     }
-
-     #description section h4, #album section h4 {
-          font-size: 28px;
-          margin: 20px;
-     }
-
-     #album section {
-          margin: 20px;
-          padding-bottom: 100px;
-     }
-
-     #album img {
-          padding: 20px;
-          width: 500px;
-          height: auto;
      }
 
      /****************** footer **********************/
