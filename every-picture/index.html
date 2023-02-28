@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Gelzea's Every Picture</title>
+
+     <!--Normalize Script-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Questrial&family=Rammetto+One&family=Shippori+Antique&display=swap" rel="stylesheet">
+
+     <!--Style Sheet-->
+     <link href="styles.css" rel="stylesheet">
+
+     <!--JS Sheet-->
+     <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+          <img src="images/icon-search.png" alt="icon-search" width="150" height="150">
+          <div>
+               <h1>
+                    <span style="--i:1">My</span>
+                    <span style="--i:2">Travel</span>
+                    <span style="--i:3">Diary</span>
+               </h1>
+               <h2>Every Picture</h2>
+          </div>
+     </header>
+
+     <main id="content">
+          <p>A Mini Timeline Of My Adventures</p>
+
+          <section id="spring" class="seasons">
+               <img class="icon" src="images/spring.png" alt="spring" width="280" height="280">
+               <h3><button class="button">Spring</button></h3>
+          </section>
+
+          <section id="summer" class="seasons">
+               <img class="icon" src="images/summer.png" alt="summer" width="280" height="280">
+               <h3><button class="button">Summer</button></h3>
+          </section>
+
+          <section id="fall" class="seasons">
+               <img class="icon" src="images/fall.png" alt="fall" width="280" height="280">
+               <h3><button class="button">Fall</button></h3>
+          </section>
+
+          <section id="winter" class="seasons">
+               <img class="icon" src="images/winter.png" alt="winter" width="280" height="280">
+               <h3><button class="button">Winter</button></h3>
+          </section>
+     </main>
+
+     <div id="description">
+          <section id="spring-des">
+               <span class="close">x</span>
+               <h4>Spring Season</h4>
+
+               <img class="icon" src="images/spring.jpg" alt="spring" width="280" height="280">
+               <p>
+                    Spring symbolizes bloom, a refresh part in life. The blossoming season with new starts and transformations. Here are just some photos I took during Spring. Make sure you took your allergy pills. 
+               </p>
+               <button>SNEAK A PEEK</button>
+          </section>
+
+          <section id="summer-des">
+               <span class="close">x</span>
+               <h4>Summer Season</h4>
+               <img class="icon" src="images/summer.jpg" alt="winter" width="280" height="280">
+               <p>
+                    Summer symbolizes burgeon, the growth part in life. The tropical season for nourishment and vacation. Here are just some photos I took during Summer. Prepare your sunscreen and cooler to dive in the waves of the water.
+               </p>
+               <button>SNEAK A PEEK</button>
+          </section>
+
+          <section id="fall-des">
+               <span class="close">x</span>
+               <h4>Fall Season</h4>
+               <img class="icon" src="images/fall.jpg" alt="winter" width="280" height="280">
+               <p>
+                    Fall symbolizes the swirling change part in life. The breazy season to take out the aggravation and let go. Here are just some photos I took during Fall. Jump into fallen leaves and hear the whispers of the wind.
+               </p>
+               <button>SNEAK A PEEK</button>
+          </section>
+
+          <section id="winter-des">
+               <span class="close">x</span>
+               <h4>Winter Season</h4>
+               <img class="icon" src="images/winter.jpg" alt="winter" width="280" height="280">
+               <p>
+                    Winter symbolizes the reflecting and hoping part in life. The freezing and jolliest season to recap the past and look forward for the future. Here are just some photos I took during Winter. A time to decorate the world full of wonders and illumination.
+               </p>
+               <button>SNEAK A PEEK</button>
+          </section>
+     </div>
+
+     <div id="album">
+          <section id="spring-album">
+               <span id="back1">&#8249;</span>
+               <span class="close">&#10006;</span>
+               <h4>Spring Album</h4>
+
+               <img src="images/spring/spring1.jpg" alt="slideshow image" id="spring-images" width="280" height="380">
+
+               <button class="previous">PREVIOUS</button> 
+               <button class="next">NEXT</button>
+          </section>
+
+          <section id="summer-album">
+               <span id="back2">&#8249;</span>
+               <span class="close">&#10006;</span>
+               <h4>Summer Album</h4>
+
+               <img src="images/summer/summer1.jpg" alt="slideshow image" id="summer-images" width="280" height="380">
+
+               <button class="previous">PREVIOUS</button> 
+               <button class="next">NEXT</button>
+          </section>
+
+          <section id="fall-album">
+               <span id="back3">&#8249;</span>
+               <span class="close">&#10006;</span>
+               <h4>Fall Album</h4>
+
+               <img src="images/fall/fall1.jpg" alt="slideshow image" id="fall-images" width="280" height="380">
+
+               <button class="previous">PREVIOUS</button> 
+               <button class="next">NEXT</button>
+          </section>
+
+          <section id="winter-album">
+               <span id="back4">&#8249;</span>
+               <span class="close">&#10006;</span>
+               <h4>Fall Album</h4>
+
+               <img src="images/winter/winter1.jpg" alt="slideshow image" id="winter-images" width="280" height="380">
+
+               <button class="previous">PREVIOUS</button> 
+               <button class="next">NEXT</button>
+          </section>
+     </div> 
+
+     <footer>
+          <p>Page By: Gelzea Domingo</p>
+          <p>
+               Contact: <a href="mailto:&#103;&#108;&#122;&#100;&#111;&#109;&#105;&#110;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#103;&#108;&#122;&#100;&#111;&#109;&#105;&#110;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
+          </p>
+          <p><a href="https://validator.w3.org/check?uri=https://dgelzea.github.io/des157a/every-picture/index.html">Valid HTML5</a> || <a href="http://validator.w3.org/check?uri=https://dgelzea.github.io/des157a/every-picture/styles.css">Valid CSS</a></p>
+     </footer>
+</body>
+
+</html>
