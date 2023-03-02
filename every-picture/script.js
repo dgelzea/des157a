@@ -141,22 +141,66 @@
 
     //spring
     const SpringImg = [
-        'spring/spring1.jpg', 'spring/spring2.jpg', 'spring/spring3.jpg', 'spring/spring4.jpg', 'spring/spring5.jpg', 'spring/spring6.jpg', 'spring/spring7.jpg','spring/spring8.jpg', 'spring/spring9.jpg', 'spring/spring10.jpg', 'spring/spring11.jpg', 'spring/spring12.jpg',
+        'spring/spring1.jpg', 
+        'spring/spring2.jpg', 
+        'spring/spring3.jpg', 
+        'spring/spring4.jpg', 
+        'spring/spring5.jpg', 
+        'spring/spring6.jpg', 
+        'spring/spring7.jpg',
+        'spring/spring8.jpg', 
+        'spring/spring9.jpg', 
+        'spring/spring10.jpg', 
+        'spring/spring11.jpg', 
+        'spring/spring12.jpg',
     ];
 
     //summer
     const SummerImg = [
-        'summer/summer1.jpg', 'summer/summer2.jpg', 'summer/summer3.jpg', 'summer/summer4.jpg', 'summer/summer5.jpg', 'summer/summer6.jpg', 'summer/summer7.jpg','summer/summer8.jpg', 'summer/summer9.jpg', 'summer/summer10.jpg', 'summer/summer11.jpg', 'summer/summer12.jpg',
+        'summer/summer1.jpg', 
+        'summer/summer2.jpg', 
+        'summer/summer3.jpg', 
+        'summer/summer4.jpg', 
+        'summer/summer5.jpg', 
+        'summer/summer6.jpg', 
+        'summer/summer7.jpg',
+        'summer/summer8.jpg', 
+        'summer/summer9.jpg', 
+        'summer/summer10.jpg', 
+        'summer/summer11.jpg', 
+        'summer/summer12.jpg',
     ];
 
     //fall
     const FallImg = [
-        'fall/fall1.jpg', 'fall/fall2.jpg', 'fall/fall3.jpg', 'fall/fall4.jpg', 'fall/fall5.jpg', 'fall/fall6.jpg', 'fall/fall7.jpg', 'fall/fall8.jpg', 'fall/fall9.jpg', 'fall/fall10.jpg', 'fall/fall11.jpg', 'fall/fall12.jpg',
+        'fall/fall1.jpg', 
+        'fall/fall2.jpg', 
+        'fall/fall3.jpg', 
+        'fall/fall4.jpg', 
+        'fall/fall5.jpg', 
+        'fall/fall6.jpg', 
+        'fall/fall7.jpg', 
+        'fall/fall8.jpg', 
+        'fall/fall9.jpg', 
+        'fall/fall10.jpg', 
+        'fall/fall11.jpg', 
+        'fall/fall12.jpg',
     ];
 
     //winter
     const WinterImg = [
-        'winter/winter1.jpg', 'winter/winter2.jpg', 'winter/winter3.jpg', 'winter/winter4.jpg', 'winter/winter5.jpg', 'winter/winter6.jpg', 'winter/winter7.jpg', 'winter/winter8.jpg', 'winter/winter9.jpg', 'winter/winter10.jpg', 'winter/winter11.jpg', 'winter/winter12.jpg',
+        'winter/winter1.jpg', 
+        'winter/winter2.jpg', 
+        'winter/winter3.jpg', 
+        'winter/winter4.jpg', 
+        'winter/winter5.jpg', 
+        'winter/winter6.jpg', 
+        'winter/winter7.jpg', 
+        'winter/winter8.jpg', 
+        'winter/winter9.jpg', 
+        'winter/winter10.jpg', 
+        'winter/winter11.jpg', 
+        'winter/winter12.jpg',
     ];
     
     //slideshow function

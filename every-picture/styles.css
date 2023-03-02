@@ -107,16 +107,17 @@ h1 span {
      backface-visibility: hidden;
 }
 
-.icon {
+#content .icon {
      display: block;
+     width: 80%;
      margin-left: auto;
      margin-right: auto; 
-     padding-bottom: 30px;
+     margin-bottom: 35px;
      border-radius: 10px;
 }
 
-.seasons:nth-child(5) img {
-     padding-bottom: 55px;
+.seasons:nth-child(5) {
+     padding-bottom: 35px;
 }
 
 .button {
@@ -160,8 +161,12 @@ h1 span {
 }
 
 #description .icon {
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+     margin-bottom: 30px;
+     border-radius: 10px;
      margin-top: 35px;
-     padding-bottom: 0;
 }
    
 #description p {
@@ -494,7 +499,6 @@ footer a:hover::before {
           background: none;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-gap: 0;
           padding: 0;
           margin: 0;
           position: relative;
@@ -502,7 +506,7 @@ footer a:hover::before {
      }
 
      #content .icon {
-          width: 200px;
+          width: 190px;
           height: auto;
      }
 
@@ -530,7 +534,6 @@ footer a:hover::before {
           margin: 40px;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          gap: 3px;
      }
 
      #description p {
