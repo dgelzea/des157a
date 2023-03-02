@@ -133,10 +133,17 @@ figure img {
     padding-bottom: 30px;
 }
 
-
 .icon-wave {
     position: relative;
     top: -15px;
+    left: 50%;
+    transform: translateX(-50%);   
+    margin-bottom: 35px; 
+}
+
+.icon-greet {
+    position: relative;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);   
     margin-bottom: 35px; 
@@ -150,9 +157,9 @@ figure img {
     margin-bottom: 35px;
 }
 
-.icon-greet {
+.icon-smile {
     position: relative;
-    top: 0;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 35px;
@@ -374,7 +381,7 @@ footer a:hover::before {
         position: relative;
     }
 
-    #one, #two, #three, #four {
+    #one, #two, #three, #four, #five {
         position: relative;
         padding-bottom: 110px;        
         border-bottom: solid 3px rgb(164, 192, 212);
@@ -390,7 +397,7 @@ footer a:hover::before {
         border: none;
     }
 
-    #three {
+    #four {
         padding-bottom: 150px;
     }
 
@@ -414,8 +421,14 @@ footer a:hover::before {
         margin-top: -86px;
         z-index: -1;
     }
-
+    
     .icon-wave {
+        position: absolute;
+        top: 61%;
+        left: 83%;
+    }
+
+    .icon-greet {
         position: absolute;
         top: 73%;
         left: 18%;
@@ -427,9 +440,9 @@ footer a:hover::before {
         left: 83%;
     }
 
-    .icon-greet {
+    .icon-smile {
         position: absolute;
-        top: 62%;
+        top: 57%;
         left: 18%;
     }
 
