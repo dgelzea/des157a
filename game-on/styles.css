@@ -1,0 +1,54 @@
+body {
+     /* background: url(images/diary.png) no-repeat center center fixed;  */
+     background-size: cover;
+     justify-content: center;
+     align-items: center;
+     text-transform: uppercase;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+/****************** scrollbar **********************/
+
+::-webkit-scrollbar {
+     width: 18px;
+     height: 18px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     border: 8px solid #f0f0f0;
+     background-color: #D0965D;
+     min-height: 25px;
+     min-width: 25px;
+}
+ 
+::-webkit-scrollbar-track {
+     border: 8px solid #f0f0f0;
+     background-color: #dcdcdc;
+}
+
+/****************** header **********************/
+
+header {
+     text-align: center;
+     margin: auto;
+}
+
+
+/****************** contents **********************/
+
+#content {
+     margin: 30px;
+}
+
+
+/****************** overlays **********************/
+
+
+/****************** footer **********************/
+
+footer {
+     text-align: center;
+     margin: auto;
+}
