@@ -519,7 +519,7 @@ footer a:hover::before {
           padding-top: 0;
      }
 
-     .button {
+     #content button {
           font-size: 15px;
           top: 35%;
      }

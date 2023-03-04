@@ -3,10 +3,10 @@
     'use strict';
     console.log('Reading JS');
 
-    const spring = document.querySelector("#spring .button");
-    const summer = document.querySelector("#summer .button");
-    const fall = document.querySelector("#fall .button");
-    const winter = document.querySelector("#winter .button");
+    const spring = document.querySelector("#spring button");
+    const summer = document.querySelector("#summer button");
+    const fall = document.querySelector("#fall button");
+    const winter = document.querySelector("#winter button");
     
     const close =  document.querySelectorAll(".close");
 
