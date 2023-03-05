@@ -1,0 +1,244 @@
+body {
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+}
+
+/****************** scrollbar **********************/
+
+::-webkit-scrollbar {
+     width: 18px;
+     height: 18px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     border: 8px solid #f0f0f0;
+     background-color: #D0965D;
+     min-height: 25px;
+     min-width: 25px;
+}
+ 
+::-webkit-scrollbar-track {
+     border: 8px solid #f0f0f0;
+     background-color: #dcdcdc;
+}
+
+/****************** header **********************/
+
+header {
+     background-color: #e9eff4;
+     justify-content: center;
+     padding: 20px;
+}
+
+header h1 {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30px;
+     color: #f35c3c;
+     text-align: center;
+     text-transform: uppercase;
+     margin-top: 0;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+}
+
+.icon-excited {
+     width: 65%;
+     height: auto;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/****************** main **********************/
+
+main {
+     background-color: #ffffff;
+     text-align: justify;
+     line-height: 1.6em;;
+     margin: 25px;
+}
+
+main h2 {
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 20px;
+     color: #d6bb6b;
+     text-align: center;
+     text-transform: uppercase;
+     margin-top: 38px;
+     padding-top: 50px;
+     border-top: 1px solid #d6bb6b;
+}
+
+section:last-child {
+     border-bottom: 1px solid #d6bb6b;
+     margin-bottom: 38px;
+     padding-bottom: 38px;
+}
+
+main p {
+     font-family: 'Questrial', sans-serif;
+     font-size: 13px;
+     color: #614c39;
+     padding: 13px;
+}
+
+figcaption {
+     font-family: 'Questrial', sans-serif;
+     font-size: 13px;
+     color: #c48738;
+     text-align: center;
+     padding: 13px;
+}
+
+section a:link {
+     color: #c48738;
+}
+
+img {
+     width: 100%;
+     height: auto;
+}
+
+/****************** footer **********************/
+
+footer {
+     background-color: #e9eff4;
+     justify-content: center;
+     text-align: center;
+     text-transform: uppercase;
+     margin: 0;
+     padding: 30px;
+}
+ 
+footer p {
+     font-family: 'Questrial', sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     color: #614c39;
+}
+
+/****************** link **********************/
+ 
+a:link {
+     text-decoration: none;
+     color: #c48738;
+}
+  
+a {
+     position: relative;
+}
+ 
+a:hover {
+     color: #D0965D;
+}
+ 
+a:visited {
+     color: #D0965D;
+}
+ 
+a::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     border-radius: 4px;
+     background-color: #F9CE7B;;
+     bottom: -5px;
+     left: 0;
+     transform-origin: right;
+     transform: scaleX(0);
+     transition: transform .3s ease-in-out;
+}
+ 
+a:hover::before {
+     transform-origin: left;
+     transform: scaleX(1);
+}
+
+/************************* media query ***************************/
+
+@media only screen and (min-width: 600px) {
+
+    body {
+          margin: auto;
+     }
+
+     header h1 {
+          font-size: 35px;;
+     }
+
+     .icon-excited {
+          width: 45%;
+          height: auto;
+     }
+
+     main {
+          width: 80%;
+          margin: auto;
+          line-height: 1.8em;
+     }
+
+     main h2 {
+          font-size: 23px;
+     }
+
+     main p, figcaption, footer {
+          font-size: 16px;
+     }
+}
+
+@media only screen and (min-width: 1000px) {
+
+     body {
+          justify-content: center;
+     }
+ 
+     header h1 {
+          font-size: 35px;;
+     }
+ 
+     .icon-excited {
+          width: 20%;
+          height: auto;
+     }
+
+     main {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          border: none;
+     }
+
+     section:nth-child(1) {  
+          grid-column-start: 1; 
+          grid-column-end: 3;
+     }
+
+     section:nth-child(6) {  
+          margin-bottom: 38px;
+     }
+
+     main p {
+          font-size: 13px;
+     }
+ 
+     section {
+          display: block;
+          justify-content: center;
+          border: 1px solid #d6bb6b;
+          padding: 20px;
+          margin: 10px;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+     }
+ 
+     /****************** footer **********************/
+
+     footer {
+          display: flex;
+          flex: 1;
+          gap: 50px;
+     }
+}
