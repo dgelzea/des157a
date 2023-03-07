@@ -187,6 +187,7 @@ h7 {
      padding-left: 13px;
      align-items: center;
      margin: 23px 0 23px 0;
+     padding: 10px;
 }
 
 #score h8 {
@@ -343,11 +344,10 @@ footer a:hover::before {
           grid-column: 1 / 6;
           grid-row: 3 / 6;
           padding: 20px 35px 20px 20px;
-          margin: 20px 35px 20px 30px;
+          margin: auto;
      }
 
      #score h8 {
-          width: 100%;
           font-size: 18px;
      }
 
