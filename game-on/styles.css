@@ -373,6 +373,10 @@ footer a:hover::before {
           align-items: center;
           justify-content: center;
      }
+     
+     #rollagain, #pass {
+          margin: 0;
+     }
 
      #win h7 {
           font-size: 45px;
