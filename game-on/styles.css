@@ -254,6 +254,16 @@ footer a:hover::before {
 } 
 
 #sources a:link {
+     text-decoration: none;
+     color:#47311d;
+}
+
+
+#sources a:hover {
+     color: #dda25f;
+}
+
+#sources a:visited {
      color:#47311d;
 }
 
@@ -363,6 +373,10 @@ footer a:hover::before {
           align-items: center;
           justify-content: center;
      }
+     
+     #rollagain, #pass {
+          margin: 0;
+     }
 
      #win h7 {
           font-size: 45px;
@@ -376,6 +390,13 @@ footer a:hover::before {
           margin: auto;
           align-items: center;
           justify-content: center;
+     }
+     
+      #sources {
+          grid-column: 1 / 6;
+          grid-row: 3 / 6;
+          padding: 20px 35px 20px 20px;
+          margin: auto;
      }
 
 }
