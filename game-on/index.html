@@ -45,21 +45,38 @@
 
           </section> 
 
-          <div id="game-control">
+          <section id="game-control">
                <h3>Randomly Pick the First Player, and Start the Game</h3>
 
-               <button id="startgame">Start a Game</button>
-          </div>
+               <form>
+                    <p id="error"></p>
+
+                    <label for="p1name">Player One</label>
+                    <input type="text" id="p1name" name="p1name" placeholder="Player One Name">
+                
+                    <label for="p2name">Player Two</label>
+                    <input type="text" id="p2name" name="p2name" placeholder="Player Two Name">
+                  
+                    <button type="submit" id="startgame">Start a Game</button>
+               </form>
+          </section>
+
+          <section id="game-start">
+               <h3>The Game Has Started</h3>
+               <button id="quit">Wanna Quit?</button>
+          </section>
 
           <div id="score">
-               <div id="player1">
-                    <img src = "images/player-one.png" alt="player1" width="100" height="100" class="image">
-                    <div id="p1-score"></div>
-               </div>
-     
-               <div id="player2">
-                    <img src = "images/player-two.png" alt="player2" width="100" height="100">
-                    <div id="p2-score"></div>
+               <div id="hidden">
+                    <div id="player1">
+                         <div id="player-one"></div>
+                         <div id="p1-score"></div>
+                    </div>
+          
+                    <div id="player2">
+                         <div id="player-two"></div>
+                         <div id="p2-score"></div>
+                    </div>
                </div>
           </div>
 
