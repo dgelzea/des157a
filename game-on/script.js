@@ -24,8 +24,6 @@
      const gameData = {
           dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 'images/4die.png', 'images/5die.png', 'images/6die.png'], 
           playerWin: ['images/player1-win.png', 'images/player2-win.png'],
-          // playerSwitch: ['images/player1-1.png', 'images/player2-1.png'],
-          // snakeEyes: ['images/player1-2.png', 'images/player2-2.png'],
           score: [0, 0],
           roll1: 0,
           roll2: 0,
@@ -40,9 +38,6 @@
           const player1 = document.querySelector("#p1name").value;
           const player2 = document.querySelector("#p2name").value;
 
-          const player1Img = document.getElementById("player-one");
-          const player2Img = document.getElementById("player-two");
-
           if(player1 == ''){
                document.querySelector('#p1name').focus();
                document.getElementById("error").innerHTML = `<span style=" color:#7895d0; font-weight:bold; text-transform: uppercase; ">please provide a name</span>`;
@@ -55,7 +50,6 @@
   
                const playerData = {
                     players: [player1, player2],
-                    // playerImg: [player1Img, player2Img]
                }
 
                document.getElementById("rules").style.display = "none";
@@ -106,6 +100,10 @@
                     if( gameData.rollSum === 2 ) {
                          game.innerHTML += '<h5>Oh snap! Snake eyes!</h5>';
 
+                         document.getElementById("player-one").innerHTML = `<img src = "images/player1-1.png" alt="player1" width="100" height="100" class="image">`;
+
+                         document.getElementById("player-two").innerHTML = `<img src = "images/player2-1.png" alt="player1" width="100" height="100" class="image">`;
+
                          gameData.score[gameData.index] = 0;
                          gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
@@ -118,7 +116,12 @@
                     //if either die is a 1 . . .
                     else if( gameData.roll1 === 1 || gameData.roll2 === 1 ){
                          gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+
                          game.innerHTML += `<h5>Sorry, one of your rolls was a one, switching to ${playerData.players[gameData.index]}</h5>`;
+
+                         document.getElementById("player-one").innerHTML = `<img src = "images/player1-2.png" alt="player1" width="100" height="100" class="image">`;
+
+                         document.getElementById("player-two").innerHTML = `<img src = "images/player2-2.png" alt="player1" width="100" height="100" class="image">`;
 
                          setTimeout(setUpTurn, 2000);
                          //alert sound
@@ -129,6 +132,10 @@
                     else { 
                          gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
                          actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <button id="pass">Pass</button>';
+
+                         document.getElementById("player-one").innerHTML = `<img src = "images/player1.png" alt="player1" width="100" height="100" class="image">`;
+
+                         document.getElementById("player-two").innerHTML = `<img src = "images/player2.png" alt="player2" width="100" height="100" class="image">`;
 
                          document.getElementById("rollagain").addEventListener("click", function(){
                               throwDice();
@@ -178,11 +185,7 @@
 
                     document.querySelector("#score").style.display="block";
 
-                    document.getElementById("player-one").innerHTML = `<img src = "images/player1.png" alt="player1" width="100" height="100" class="image">`;
-
                     p1Score.innerHTML = `<h8><strong>${playerData.players[0]}: ${gameData.score[0]}</span></h8>`;
-
-                    document.getElementById("player-two").innerHTML = `<img src = "images/player2.png" alt="player1" width="100" height="100" class="image">`;
 
                     p2Score.innerHTML = `<h8><strong>${playerData.players[1]}: ${gameData.score[1]}</strong></h8>`;
 
