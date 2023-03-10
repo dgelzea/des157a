@@ -70,6 +70,7 @@
 
                //set up who goes first
                function setUpTurn(){
+                    event.preventDefault();
 
                     game.innerHTML = `<h4>Roll the dice for <span style=" color:#7895d0; font-weight:bold; text-transform: uppercase; ">${playerData.players[gameData.index]}</span></h4>`;
                     actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -83,6 +84,7 @@
 
                //players turns
                function throwDice() {
+                    event.preventDefault();
 
                     actionArea.innerHtml = '';
                     gameData.roll1 = Math.floor(Math.random() * 6) + 1; 
