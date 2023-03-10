@@ -80,6 +80,8 @@
                          throwDice();        
                     });
 
+                    showCurrentScore();
+
                };
 
                //players turns
@@ -164,13 +166,17 @@
 
                     if(gameData.score[gameData.index] > gameData.gameEnd) {
 
-                         win.innerHTML = `<h7><span style=" color:#72ad41;; font-weight:bold; text-transform: uppercase; ">${playerData.players[gameData.index]}</span> wins with <span style=" color:#72ad41;; font-weight:bold; text-transform: uppercase; ">${gameData.score[gameData.index]}</span> points!</h7>`
+                         document.querySelector("#win-grid").style.display = "block";
+
+                         win.innerHTML = `<h7><span style=" color:#72ad41;; font-weight:bold; text-transform: uppercase; ">${playerData.players[gameData.index]}</span> wins <br> with <span style=" color:#72ad41;; font-weight:bold; text-transform: uppercase; ">${gameData.score[gameData.index]}</span> points!</h7>`
 
                          win.innerHTML += `<img src = "${gameData.playerWin[gameData.index]}" alt="playerWin" width="130" height="130">`
 
-                         actionArea.innerHTML = '';
-                         game.innerHTML = '';
-                         score.innerHTML = '';
+                         actionArea.style.display = 'none';
+                         game.style.display = 'none';
+                         score.style.display = 'none';
+                         gameControl.style.display = 'none';
+
                          document.getElementById('quit').innerHTML = "Start a New Game?";
 
                          //win sound
