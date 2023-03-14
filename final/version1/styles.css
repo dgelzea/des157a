@@ -1,0 +1,606 @@
+body {
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+/****************** scrollbar **********************/
+
+::-webkit-scrollbar {
+     width: 18px;
+     height: 18px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     border: 8px solid #f0f0f0;
+     background-color: #97cbd4;
+     min-height: 25px;
+     min-width: 25px;
+}
+ 
+::-webkit-scrollbar-track {
+     border: 8px solid #f0f0f0;
+     background-color: #dcdcdc;
+}
+
+/****************** navigation **********************/
+
+.nav {
+     position: relative;
+     overflow: hidden;
+     background-color: #97CBD4;
+     justify-content: center;
+}
+   
+.nav ul{
+     color: #ffffff;
+     display: flex;
+     justify-content: space-around;
+     list-style-type: none;
+     padding: 23px 15px;
+     margin: 0;
+}
+
+.nav ul li a {
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 15px;
+     color: #ffffff;
+     padding: 23px 15px;
+     text-decoration: none;
+     list-style-type: none;
+     text-transform: uppercase;
+     margin: 0;
+     padding: 0;
+}
+   
+.nav ul li a:hover {
+     background-color: #ffffff;
+     color: #97CBD4;
+}
+
+.nav a:visited {
+     color: #ffffff;
+}
+   
+.nav a.active {
+     background-color: #ffffff;
+     color: #97CBD4;
+}
+
+/****************** header/contents **********************/
+
+h1{
+     font-family: 'Style Script', cursive;
+     font-size: 35px;
+     font-weight: normal;
+     color: #97cbd4;
+     text-align: center;
+     margin: 45px;
+     padding: 30px;
+}
+
+main {
+     margin: 50px 10px 50px 10px;
+}
+
+#about, #explore, #friends, #album, #stories, #journal {
+     border-bottom: 1px solid #97CBD4;
+     margin: 28px;
+}
+
+/****************** head **********************/
+
+#head {
+     position: relative;
+}
+
+#banner {
+     object-fit: cover;
+     width: 100%;
+     height: 280px;
+     opacity: 0.8;
+}
+
+#pfp {
+     position: absolute;
+     border-radius: 50%;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+h2 {
+     position: absolute;
+     top: 56%;
+     left: 0;
+     right: 0;
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 16px;
+     color: #ffffff;
+     text-shadow: 2px 2px 2px #62858b;
+     text-align: center;
+     margin: auto;
+     line-height: 1.6em;
+}
+
+/****************** about **********************/
+
+#about p {
+     margin: 30px 0 30px 0;
+}
+
+#about h5 {
+     padding: 0 18px 20px 13px;
+     margin: 0 18px 10px 0;
+}
+
+
+h3 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+     font-weight: bold;
+     color:#bbad52;
+     text-transform: uppercase;
+     padding: 10px 15px 0 0;
+     margin-bottom: 0;
+}
+
+p {
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 12px;
+     text-align: justify;
+     line-height: 1.8em;
+     padding: 0 18px 20px 13px;
+}
+
+h6 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 12px;
+     font-weight: normal;
+     color: #87acad;
+     margin-top: 10px;
+     margin-bottom: 35px;
+}
+
+
+/****************** options **********************/
+
+#options {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     margin: 10px 30px 25px 25px;
+}
+
+#options img {
+     border-radius: 50%;
+}
+
+h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 13px;
+     color: #62858b;
+     text-align: center;
+}
+
+/****************** friends **********************/
+
+#friends {
+     padding: 0 0 20px 0;
+}
+
+#friends article {
+     background-color:#f0f0f0;
+     border-radius: 10px;
+     display: flex;
+     gap: 15px;
+     justify-content: left;
+     align-items: center;
+     margin: 10px 30px 20px 25px;
+     padding: 12px 18px 12px 28px;
+}
+
+#friends img {
+     border-radius: 50%;
+}
+
+#friends h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 15px;
+     color: #62858b;
+     text-align: left;
+}
+
+/****************** album **********************/
+
+#album {
+     padding: 0 0 20px 0;
+}
+
+#album article {
+     background-color: #f3f1f1;
+     border-radius: 10px;
+     padding: 0 0 10px 0;
+     margin: 0 8px 20px 8px;
+}
+
+#album img {
+     display: block;
+     border-radius: 10px 10px 0 0;
+     width: 100%;
+     height: auto;
+     margin: auto;
+}
+
+#album article h6 {
+     padding: 0 0 25px 20px;
+     margin: 0;
+}
+
+h5 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 13px;
+     color: #62858b;
+     text-align: left;
+     padding: 10px 0 0 16px;
+     margin-bottom: 10px;
+}
+
+/****************** stories **********************/
+
+#stories {
+     padding: 10px 0 10px 0;
+}
+
+#stories article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+}
+
+#stories div img {
+     border-radius: 10px;
+     display: block;
+     width: 88%;
+     height: 180px;
+     margin: 0 auto
+}
+
+/****************** journal **********************/
+
+#journal {
+     padding: 0;
+     margin-bottom: 50px;
+}
+
+#journal article {
+     display: flex;
+     gap: 18px;
+     justify-content: left;
+     align-items: center;
+     margin: 10px 0 20px 0;
+     padding: 12px 0 12px 0;
+     border-top: 1px solid #bbad52;
+}
+
+#journal img {
+     border-radius: 10px;
+     margin: 10px 0 20px 0;
+}
+
+#journal h5 {
+     margin: 10px 10px 5px 0;
+     padding: 12px 0 12px 0;
+}
+
+#journal p {
+     font-size: 11px;
+     margin: 5px 10px 5px 0;
+     padding: 0;
+}
+
+#journal button {
+     font-weight: bold;
+     background-color: transparent;
+     border: none;
+     color: #bbad52;
+     padding: 0;
+     margin: 0;
+}
+
+/******************** overlays ********************/
+
+#back, #food-story, #art-story {
+     background-color: transparent;
+     font-size: 16px;
+     padding: 10px;
+     margin: 10px 0 30px 0;
+     border: none;
+}
+
+#media {
+     margin: 30px;
+}
+
+#media h3 {
+     text-align: center;
+}
+
+#media section {
+     border-top: 1px solid #d6dbdd;
+}
+
+#media article {
+     border-bottom: 1px solid #97CBD4;
+     margin-bottom: 45px;
+}
+
+#bff article {
+     background-color: #dcdcdc;
+     border-radius: 10px;
+     margin: 30px 30px 20px 30px;
+     padding: 15px;
+     display: flex;
+     gap: 25px;
+     align-items: center;
+     justify-items: center;
+     line-height: 1.5em;
+}
+
+#bff article img {
+     border-radius: 50%;
+}
+
+.seasonDes img {
+     display: block;
+     width: 100%;
+     height: auto;
+     margin: 35px auto 30px auto;
+     border-radius: 10px;
+}
+
+.seasonImg {
+     margin: 0;
+     padding: 0;
+}
+
+.seasonImg img {
+     display: block;
+     width: 85%;
+     height: auto;
+     margin: 30px auto 30px auto;
+}
+
+.slideshow img {
+     display: block;
+     width: 88%;
+     height: auto;
+     margin: 10px auto 10px auto;
+}
+
+.slideshow button {
+     font-family: 'Shippori Antique', sans-serif;
+     background-color: #b1bad3;
+     padding: 10px;
+     margin: 10px auto 45px auto; 
+     color: #ffffff;
+     border-radius: 5px;
+     border: none;
+}
+
+.previous {
+     display:inline;
+     margin-right: 0;
+}
+
+.next {
+     display:inline;
+     float: right;
+     margin-right: 0;
+} 
+
+.entries img {
+     display: block;
+     width: 100%;
+     height: auto;
+     margin: 30px auto;
+}
+
+#back, #bff, #spring, #summer, 
+#fall, #winter, #story1, #story2, #entry1, #entry2 {
+     display: none;
+}
+
+/****************** footer **********************/
+
+footer {
+     background-color: #97cbd4;
+     padding: 20px;
+}
+ 
+footer p {
+     font-family: 'Questrial', sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     color: #ffffff;
+     text-align: center;
+     justify-content: center;
+     text-transform: uppercase;
+     padding: 0;
+     margin: 10px;
+}
+ 
+footer a:link {
+     text-decoration: none;
+     color: #ffffff;
+}
+ 
+footer a {
+     position: relative;
+}
+ 
+footer a:hover {
+     color: #CFC374;
+}
+ 
+a:visited {
+     color: #ffffff;
+}
+ 
+footer a::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     border-radius: 4px;
+     background-color: #CFC374;
+     bottom: -5px;
+     left: 0;
+     transform-origin: right;
+     transform: scaleX(0);
+     transition: transform .3s ease-in-out;
+}
+ 
+footer a:hover::before {
+     transform-origin: left;
+     transform: scaleX(1);
+}
+
+/************************* media query ******************************/
+
+@media only screen and (min-width: 600px) {
+
+     main {
+          width: 60%;
+          margin: 80px auto 80px auto;
+     }
+
+     #album {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+     }
+
+     #album article {
+          width: 88%;
+          margin: 0;
+          padding: 0;
+     }
+  
+     #album h3, #album h6 {
+          grid-column: 1 / 3;
+     }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+     /****************** texts **********************/
+
+     h1 {
+          font-size: 55px;
+     }
+
+     h2 {
+          font-size: 25px;
+     }
+
+     h3, h6 {
+          font-size: 20px;
+     }
+
+     h4, h5 {
+          font-size: 15px;
+     }
+
+     /****************** contents **********************/
+
+     #banner {
+          height: 450px;
+     }
+
+     #pfp {
+          width: 120px;
+          height: 120px;
+          padding: 20px;
+     }
+
+     main {
+          width: 60%;
+          margin: 80px auto 80px auto;
+     }
+
+     #options h4 {
+          margin: 0 30px 45px 30px;
+     }
+     
+     #explore img {
+          width: 120px;
+          height: 120px;
+          padding: 20px;
+     }
+
+     #friends article{
+          width: 30%;
+          margin-right: auto;
+          margin-left: auto;
+     }
+     
+     #album article {
+          width: 75%;
+          padding: 20px;
+          margin: 20px auto 30px auto;
+     }
+
+     #album article img, #stories div img {
+          height: 220px;
+     }
+
+     #journal {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+     }
+
+     #journal article {
+          margin: 35px;
+     }
+
+     #journal h6 {
+          grid-column: 1 / 3;
+     }
+
+     footer {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     /****************** overlays **********************/
+
+     .seasonDes {
+          display: flex;
+          gap: 30px;
+          padding: 20px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .seasonDes img {
+          width: 50%;
+          height: auto;
+     }
+
+     .seasonDes h4{
+          text-align: left;
+          padding: 0 18px 20px 13px;
+     }
+
+     .slideshow img {
+          margin: auto;
+     }
+}
