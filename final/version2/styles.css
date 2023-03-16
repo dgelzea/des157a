@@ -146,6 +146,19 @@ h4 {
      text-align: center;
 }
 
+h4 a { 
+     text-decoration: none;
+     color: #62858b;
+}
+
+h4 a:visited {
+     color: #62858b;
+}
+
+h4 a:hover {
+     color: #bbad52;
+}
+
 /****************** album **********************/
 
 #album {
@@ -181,6 +194,15 @@ h5 {
      margin-bottom: 10px;
 }
 
+h5 button {
+     border: 1px solid #62858b;
+     padding: 5px;
+}
+
+h5 button:hover {
+     background-color: #b1bad3;
+}
+
 /****************** stories **********************/
 
 #stories {
@@ -199,6 +221,10 @@ h5 {
      display: block;
      width: 100%;
      margin: 0 auto;
+}
+
+#stories button:hover{
+     color:#bbad52
 }
 
 /****************** journal **********************/
@@ -241,6 +267,10 @@ h5 {
      color: #bbad52;
      padding: 0;
      margin: 0;
+}
+
+#journal button:hover {
+     color: #87acad;
 }
 
 /******************** overlays ********************/
@@ -357,31 +387,12 @@ footer a {
      position: relative;
 }
  
-footer a:hover {
-     color: #CFC374;
-}
- 
 a:visited {
      color: #ffffff;
 }
- 
-footer a::before {
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     border-radius: 4px;
-     background-color: #CFC374;
-     bottom: -5px;
-     left: 0;
-     transform-origin: right;
-     transform: scaleX(0);
-     transition: transform .3s ease-in-out;
-}
- 
-footer a:hover::before {
-     transform-origin: left;
-     transform: scaleX(1);
+
+footer a:hover {
+     color: #CFC374;
 }
 
 /************************* media query ******************************/
