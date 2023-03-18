@@ -42,7 +42,7 @@ header h1 {
      padding-bottom: 20px;
 }
 
-.icon-excited {
+.icon {
      width: 65%;
      height: auto;
      display: block;
@@ -206,7 +206,7 @@ a:hover::before {
           font-size: 35px;;
      }
  
-     .icon-excited {
+     .icon {
           width: 20%;
           height: auto;
      }
