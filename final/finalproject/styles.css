@@ -1,0 +1,626 @@
+body, html {
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+}
+
+/****************** scrollbar **********************/
+
+::-webkit-scrollbar {
+     width: 18px;
+     height: 18px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     border: 8px solid #f0f0f0;
+     background-color: #97cbd4;
+     min-height: 25px;
+     min-width: 25px;
+}
+ 
+::-webkit-scrollbar-track {
+     border: 8px solid #f0f0f0;
+     background-color: #dcdcdc;
+}
+
+/****************** header/contents **********************/
+
+header {
+     background-color: #97cbd4;
+}
+
+h1{
+     font-family: 'Style Script', cursive;
+     font-size: 35px;
+     font-weight: normal;
+     color: #ffffff;
+     text-align: center;
+     margin: 0;
+     padding: 45px 20px 45px 20px;
+}
+
+#home, #media {
+     margin: 50px 20px 45px 20px;
+}
+
+#about, #explore, #friends, #album, #stories, #journal {
+     border-bottom: 1px solid #97CBD4;
+     margin: 28px;
+}
+
+/****************** head **********************/
+
+#head {
+     position: relative;
+}
+
+#banner {
+     object-fit: cover;
+     width: 100%;
+     height: 230px;
+     opacity: 0.8;
+}
+
+#pfp {
+     position: absolute;
+     border-radius: 50%;
+     border: 3px solid #ffffff;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+h2 {
+     position: absolute;
+     top: 58%;
+     left: 0;
+     right: 0;
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 16px;
+     color: #ffffff;
+     text-shadow: 2px 2px 2px #62858b;
+     text-align: center;
+     margin: auto;
+     line-height: 1.5em;
+}
+
+/****************** about **********************/
+
+#about p {
+     margin: 30px 0 30px 0;
+}
+
+#about h5 {
+     padding: 0 18px 20px 13px;
+     margin: 0 18px 10px 0;
+}
+
+
+h3 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+     font-weight: bold;
+     color:#bbad52;
+     text-transform: uppercase;
+     padding: 10px 15px 0 0;
+     margin-bottom: 0;
+}
+
+p {
+     font-family: 'Shippori Antique', sans-serif;
+     font-size: 12px;
+     text-align: justify;
+     line-height: 1.8em;
+     padding: 0 18px 20px 13px;
+}
+
+h6 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 12px;
+     font-weight: normal;
+     color: #87acad;
+     margin-top: 10px;
+     margin-bottom: 35px;
+}
+
+
+/****************** options **********************/
+
+#options {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     margin: 10px 30px 25px 25px;
+}
+
+#options img {
+     border-radius: 50%;
+}
+
+h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 13px;
+     color: #62858b;
+     text-align: center;
+}
+
+h4 a { 
+     text-decoration: none;
+     color: #bbad52;
+}
+
+h4 a:visited {
+     color: #bbad52;
+}
+
+/****************** album **********************/
+
+#album {
+     padding: 0 0 20px 0;
+}
+
+#album article {
+     background-color: #f3f1f1;
+     border-radius: 10px;
+     padding: 0 0 10px 0;
+     margin: 0 8px 20px 8px;
+}
+
+#album img {
+     display: block;
+     border-radius: 10px 10px 0 0;
+     width: 100%;
+     height: auto;
+     margin: auto;
+}
+
+#album article h6 {
+     padding: 0 0 25px 25px;
+     margin: 0;
+}
+
+h5 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 13px;
+     color: #62858b;
+     text-align: left;
+     padding: 10px 0 0 16px;
+     margin-bottom: 10px;
+     position: relative;
+}
+
+h5 button {
+     border: none;
+}
+
+h5 button:hover {
+     background-color: #b1bad3;
+}
+
+/****************** stories **********************/
+
+#stories {
+     padding: 10px 0 10px 0;
+}
+
+#stories article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+}
+
+#stories div img {
+     border-radius: 10px;
+     display: block;
+     width: 100%;
+     margin: 0 auto;
+}
+
+/****************** journal **********************/
+
+#journal {
+     padding: 0;
+     margin-bottom: 50px;
+}
+
+#journal article {
+     display: flex;
+     gap: 18px;
+     justify-content: left;
+     align-items: center;
+     margin: 10px 0 20px 0;
+     padding: 12px 0 12px 0;
+     border-top: 1px solid #bbad52;
+}
+
+#journal img {
+     border-radius: 10px;
+     margin: 10px 0 20px 0;
+}
+
+#journal h5 {
+     margin: 10px 10px 5px 0;
+     padding: 12px 0 12px 0;
+}
+
+#journal p {
+     font-size: 11px;
+     margin: 5px 10px 5px 0;
+     padding: 0;
+}
+
+#journal button {
+     background-color: transparent;
+     border: none;
+}
+
+/******************** overlays ********************/
+
+#back, #food-story, #art-story {
+     background-color: transparent;
+     font-size: 18px;
+     padding: 10px;
+     margin: 10px 0 30px 0;
+     border: none;
+}
+
+#top {
+     display: none;
+     position: fixed;
+     bottom: 30px;
+     right: 35px;
+     z-index: 99;
+     font-size: 15px;
+     border: none;
+     background-color: #97CBD4;
+     color: white;
+     padding: 15px;
+     border-radius: 5px;
+}
+
+#top:hover {
+     background-color: #CFC374;
+}
+
+#media {
+     margin: 30px;
+}
+
+#media h3 {
+     text-align: center;
+}
+
+#media section {
+     border-top: 1px solid #d6dbdd;
+}
+
+#media article {
+     border-bottom: 1px solid #97CBD4;
+     margin-bottom: 45px;
+}
+
+.seasonDes img {
+     display: block;
+     width: 100%;
+     height: auto;
+     margin: 35px auto 30px auto;
+     border-radius: 10px;
+}
+
+.seasonImg {
+     margin: 0;
+     padding: 0;
+}
+
+.seasonImg img {
+     display: block;
+     width: 85%;
+     height: auto;
+     margin: 30px auto 30px auto;
+}
+
+.slideshow img {
+     display: block;
+     width: 88%;
+     height: auto;
+     margin: 10px auto 10px auto;
+}
+
+.slideshow button {
+     font-family: 'Shippori Antique', sans-serif;
+     background-color: #b1bad3;
+     padding: 10px;
+     margin: 10px auto 45px auto; 
+     color: #ffffff;
+     border-radius: 5px;
+     border: none;
+}
+
+.previous {
+     display:inline;
+     margin-right: 0;
+}
+
+.next {
+     display:inline;
+     float: right;
+     margin-right: 0;
+} 
+
+.previous:hover, .next:hover {
+     background-color: #CFC374;
+     color: #ffffff;
+}
+
+.entries img {
+     display: block;
+     width: 100%;
+     height: auto;
+     margin: 30px auto;
+}
+
+#back, #spring, #summer, #fall, #winter, #story1, #story2, #entry1, #entry2 {
+     display: none;
+}
+
+/****************** footer **********************/
+
+footer {
+     background-color: #97cbd4;
+     padding: 20px;
+}
+ 
+footer p {
+     font-family: 'Questrial', sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     color: #ffffff;
+     text-align: center;
+     justify-content: center;
+     text-transform: uppercase;
+     padding: 0;
+     margin: 10px;
+}
+ 
+footer a:link {
+     text-decoration: none;
+     color: #ffffff;
+}
+ 
+a:visited {
+     color: #ffffff;
+}
+
+/******************** animation ********************/
+
+@keyframes fadeIn {
+     0% { opacity: 0; }
+     100% { opacity: 1; }
+}
+
+.fadeImg {
+     opacity: 65%;
+}
+   
+.fadeImg:hover {
+     opacity: 100%;
+     transition: opacity 1s;
+}
+
+.fadeIn {
+     animation: fadeIn 1.5s;
+}
+
+.inView {
+     opacity: 1;
+     transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+.elements.inView {
+     opacity: 1;
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+.elements {
+     opacity: 0;
+     transition: .5s;
+     transition-delay: .3s;
+     transform: translateY(50px);
+}
+
+.highlight {
+     color: #bbad52;
+     font-weight: bold;
+     padding: 5px;
+     position: relative;
+}
+
+.highlight::before {
+     content: '';
+     background-color: #dcdcdc;
+     position: absolute;
+     left: 0;
+     bottom: 3px;
+     width: 100%;
+     height: 8px;
+     z-index: -1;
+     transition: all .3s ease-in-out;
+}
+   
+.highlight:hover::before {
+     bottom: 0;
+     height: 100%;
+}
+
+.highlight:hover {
+     color: #62858b;
+}
+
+.box {
+     box-shadow: inset 0 0 0 0 #87acad;
+     color: #bbad52;
+     font-weight: bold;
+     margin: 0 -.20rem;
+     padding: 0 10px;
+     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+   
+.box:hover {
+     box-shadow: inset 300px 0 0 0 #CFC374;
+     color: #ffffff;
+}
+
+/************************* media query ******************************/
+
+@media only screen and (min-width: 600px) {
+
+     #home, #media {
+          width: 63%;
+          margin: 80px auto 80px auto;
+     }
+
+     #album {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          padding: 0 0 50px 0;
+     }
+
+     #album article {
+          width: 88%;
+          margin: auto;
+          padding: 0;
+     }
+  
+     #album h3, #album h6 {
+          grid-column: 1 / 3;
+     }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+     /****************** texts **********************/
+
+     h1 {
+          font-size: 55px;
+          margin: 10px;
+          padding: 10px;
+     }
+
+     h2 {
+          font-size: 25px;
+     }
+
+     h3, h6 {
+          font-size: 22px;
+     }
+
+     h4, h5, h6 {
+          font-size: 18px;
+     }
+
+     footer p {
+          font-size: 10px;
+     }
+
+     /****************** contents **********************/
+
+     header {
+          width: 180px;
+          height: 100%;
+          position: fixed;
+          left: 0;
+          padding: 35px;
+          z-index: 1;
+     }
+
+     main {
+          margin-left: 250px;
+     }
+
+     #banner {
+          height: 360px;
+     }
+
+     #pfp {
+          width: 150px;
+          height: 150px;
+     }
+
+     #options h4 {
+          margin: 0 30px 45px 30px;
+     }
+     
+     #explore img {
+          width: 120px;
+          height: 120px;
+          padding: 20px;
+     }
+
+     #album article {
+          margin: 20px auto 30px auto;
+     }
+
+     #album article img, #stories div img {
+          height: 220px;
+     }
+
+     #journal {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+     }
+
+     #journal article {
+          margin: 35px;
+     }
+
+     #journal h6 {
+          grid-column: 1 / 3;
+     }
+
+     footer {
+          width: 180px;
+          height: 80%;
+          position: fixed;
+          top: 73%;
+          padding: 35px;
+          z-index: 1;
+     } 
+
+     /****************** overlays **********************/
+
+     .seasonDes {
+          display: flex;
+          gap: 30px;
+          padding: 20px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .seasonDes img {
+          width: 38%;
+          height: auto;
+     }
+
+     .seasonDes h4{
+          text-align: left;
+          padding: 0 18px 20px 13px;
+     }
+
+     .seasonImg img {
+          width: 60%;
+          height: auto;
+     }
+
+     .slideshow img {
+          width: 60%;
+          height: auto;
+          margin: auto;
+     }
+}
